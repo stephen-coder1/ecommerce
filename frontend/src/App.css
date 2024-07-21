@@ -654,3 +654,26 @@ ul.CTAs a {
   font-size: 0.8rem;
   color: grey;
 }
+
+.shopBtn{
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 3px 7px;
+  border-radius: 5px;
+}
+.shopBtn:hover{
+  background-color: blue;
+  border: 1px solid white;
+}
+.logoutBtn{
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 3px 7px;
+  border-radius: 5px;
+  margin-left: 15px;
+  font-weight: 600;
+}

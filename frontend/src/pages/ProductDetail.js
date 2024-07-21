@@ -11,19 +11,19 @@ export default function ProductDetail({cartItems, setCartItems}) {
         fetch(process.env.REACT_APP_API_URL+'/product/'+id)
         .then(res => res.json())
         .then( res => setProduct(res.product))
-    },[])
+    })
 
     function addToCart() {
-        const itemExist = cartItems.find((item) => item.product._id == product._id)
+        const itemExist = cartItems.find((item) => item.product._id === product._id)
         if (!itemExist) {
             const newItem = {product, qty};
             setCartItems((state) => [...state, newItem]);
-            toast.success("Cart Item added succesfully!")
+            toast.success("Cart Item added successfully!")
         }
     }
 
     function increaseQty() {
-        if (product.stock == qty) {
+        if (product.stock === qty) {
             return;
         }
         setQty((state) => state + 1);
@@ -63,11 +63,11 @@ export default function ProductDetail({cartItems, setCartItems}) {
 
                             <span className="btn btn-primary plus" onClick={increaseQty}>+</span>
                         </div>
-                        <button type="button" onClick={addToCart} disabled={product.stock == 0}   id="cart_btn" className="btn btn-primary d-inline ml-4">Add to Cart</button>
+                        <button type="button" onClick={addToCart} disabled={product.stock === 0}   id="cart_btn" className="btn btn-primary d-inline ml-4">Add to Cart</button>
 
                         <hr />
 
-                        <p>Status: <span id="stock_status" className={product.stock > 0 ?'text-success':'text-danger'}>{product.stock > 0  ?'In Stock' : 'Out of Stock'}</span></p>
+                        <p style={{color: 'green'}}>Status: In Stack </p>
 
                         <hr />
 

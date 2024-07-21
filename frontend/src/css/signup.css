@@ -1,0 +1,71 @@
+
+  body{
+    font-family: sans-serif,'poppins';
+    background-color: rgb(216, 211, 211);
+  }
+  
+  /* Sign page styling*/
+  .signup{
+    background-color: white;
+    color: black;
+    height: 70%;
+    width: 30%;
+    position: absolute;  
+    top: 20%;
+    left: 35%;
+    border: 1px solid rgb(104, 100, 100); 
+    padding: 30px;
+  }
+  .signup h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: blue;
+    padding-bottom: 10px;
+  }
+  form{
+    display: block;
+  }
+  .signup input{
+    margin: 7px;
+    padding: 8px;
+    width: 90%;
+  }
+  .signup label{
+    margin-top: 10px;
+    font-weight: 800;
+    position: relative;
+    right: 32%;
+  }
+  /* SubmitBtn styling*/
+  #submitBtn{
+    background-color: rgb(244, 161, 7);
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 15px 30px;
+    width: 90%;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  #submitBtn:hover{
+    background-color: aqua;
+    color: black;
+  }
+  .signup a{
+    text-decoration: none;
+    color: black;
+  }
+  .signup a:hover{
+    text-decoration: underline;
+    color: blue;
+  }
+  .signup span{
+    color: red;
+    font-size: 18px;
+  }
+  .footer{
+    margin-top: 20px;
+    text-align: center;
+  }
+  

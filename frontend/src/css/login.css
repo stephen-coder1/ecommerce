@@ -1,0 +1,82 @@
+
+  body{
+    font-family: sans-serif,'poppins';
+    background-color: rgb(216, 211, 211);
+  }
+  
+  /* Login page styling*/
+  .login{
+    background-color: white;
+    height: 70%;
+    width: 30%;
+    color: black;
+    position: absolute;   
+    top: 20%;
+    left: 35%;
+    border: 1px solid rgb(104, 100, 100);
+    padding: 30px;
+
+  }
+  .login h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: blue;
+    padding-bottom: 10px;
+  }
+ 
+  .login input{
+    margin: 7px;
+    padding: 8px;
+    width: 90%;
+  }
+  .login label{
+    margin-top: 10px;
+    font-weight: 800;
+    position: relative;
+    right: 32%;
+  }
+  /* SubmitBtn styling*/
+  #submitBtn{
+    background-color: rgb(244, 161, 7);
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 15px 30px;
+    width: 90%;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  #submitBtn:hover{
+    background-color: aqua;
+    color: black;
+  }
+  .login a{
+    text-decoration: none;
+    color: black;
+  }
+  .login a:hover{
+    text-decoration: underline;
+    color: blue;
+  }
+  .login span{
+    color: red;
+    font-size: 18px;
+  }
+  .footer{
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  /* Login btn styling*/
+  .loginBtn{
+    background-color: rgb(32, 163, 32);
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+  }

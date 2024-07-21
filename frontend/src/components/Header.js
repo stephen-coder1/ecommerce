@@ -5,7 +5,8 @@ export default function Header({cartItems}) {
     return <nav className="navbar row">
             <div className="col-12 col-md-3">
                 <div className="navbar-brand">
-                <Link to="/"> <img width="150px" src="/images/logo.png" /></Link>
+                {/* <Link to="/"> <img width="150px" src="/images/logo.png"alt="error" /></Link>  */}
+                <Link to={"/home"}> <button className="shopBtn">Shopify</button> </Link>
                 </div>
             </div>
 
@@ -17,6 +18,7 @@ export default function Header({cartItems}) {
                 <Link to={"/cart"}>
                     <span id="cart" className="ml-3">Cart</span>
                     <span className="ml-1" id="cart_count">{cartItems.length}</span>
+                    <Link to={"/"}> <button className="logoutBtn">SignOut</button> </Link>
                 </Link>
             </div>
         </nav>
